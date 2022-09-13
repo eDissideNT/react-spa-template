@@ -1,12 +1,13 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
 import { IS_PROD } from '../constants/env';
+import { AppReducer } from '../app/state/reducer';
 
-const rootReducer = combineReducers({
-  foo: () => ({}), // remove it and connect your reducers
+const reducer = combineReducers({
+  app: AppReducer,
 });
 
 export const store = configureStore({
-  reducer: rootReducer,
+  reducer,
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({
       immutableCheck: false,
@@ -16,4 +17,4 @@ export const store = configureStore({
   devTools: !IS_PROD,
 });
 
-export type RootState = ReturnType<typeof rootReducer>;
+export type Store = ReturnType<typeof reducer>;
