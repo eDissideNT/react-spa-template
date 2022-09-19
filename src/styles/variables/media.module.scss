@@ -1,0 +1,20 @@
+//$sizeXS: 320px;
+$sizeS: 574px;
+$sizeM: 768px;
+$sizeL: 992px;
+$sizeXL: 1200px;
+$sizeXXL: 1400px;
+
+$mediaS: str-insert('min-width: ', quote($sizeS), -1);
+$mediaM: str-insert('min-width: ', quote($sizeM), -1);
+$mediaL: str-insert('min-width: ', quote($sizeL), -1);
+$mediaXL: str-insert('min-width: ', quote($sizeXL), -1);
+$mediaXXL: str-insert('min-width: ', quote($sizeXXL), -1);
+
+:export {
+  sizeS: $sizeS;
+  sizeM: $sizeM;
+  sizeL: $sizeL;
+  sizeXL: $sizeXL;
+  sizeXXL: $sizeXXL;
+}

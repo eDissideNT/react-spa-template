@@ -20,5 +20,5 @@ Thumbs.db
 
 # .env
 .env
-.env.dev
-.env.prod
+.env.staging
+.env.production

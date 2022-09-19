@@ -1,0 +1,17 @@
+@import '../palettes/eva-design-light';
+
+:root {
+  // BACKGROUNDS
+  --color-bg-light: #{$eva-design-light--color-primary-100};
+  --color-bg-soft: #{$eva-design-light--color-primary-200};
+  --color-bg-normal: #{$eva-design-light--color-primary-300};
+  --color-bg-medium: #{$eva-design-light--color-primary-400};
+  --color-bg-dark: #{$eva-design-light--color-primary-500};
+
+  // BORDERS
+  --color-border-light: #{$eva-design-light--color-primary-200};
+  --color-border-soft: #{$eva-design-light--color-primary-300};
+  --color-border-normal: #{$eva-design-light--color-primary-400};
+  --color-border-medium: #{$eva-design-light--color-primary-500};
+  --color-border-dark: #{$eva-design-light--color-primary-600};
+}
