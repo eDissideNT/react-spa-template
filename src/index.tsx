@@ -7,7 +7,11 @@ import App from './app/App';
 import reportWebVitals from './reportWebVitals';
 import { store } from './store/store';
 
-const container = document.getElementById('root') as HTMLElement;
+const container = document.getElementById('root');
+
+if (!container) {
+  throw new Error('HTML Element with id "root" doesn\'t exist');
+}
 
 createRoot(container).render(
   <React.StrictMode>
